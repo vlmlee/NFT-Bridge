@@ -64,3 +64,11 @@ model VerificationToken {
 
   @@unique([identifier, token])
 }
+
+model Nft {
+    id                  String @id
+    owner               String
+    contractAddress     String
+
+    @@unique([id])
+}
